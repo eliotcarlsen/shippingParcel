@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <title>Shipping Quote</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Shipping Quote:</h1>
+      <form id="userInput" action="result.php">
+        <div class="form-group">
+          <label for="lengthInput">Enter parcel length?</label>
+          <input id="lengthInput" name="lengthInput" class="form-control" type="number" required>
+        </div>
+        <div class="form-group">
+          <label for="widthInput">Enter parcel width?</label>
+          <input id="widthInput" name="widthInput" class="form-control" type="number" required>
+        </div>
+        <div class="form-group">
+          <label for="heightInput">Enter parcel height?</label>
+          <input id="heightInput" name="heightInput" class="form-control" type="number" required>
+        </div>
+        <div class="form-group">
+          <label for="weightInput">Enter parcel weight?</label>
+          <input id="weightInput" name="weightInput" class="form-control" type="number" required>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-success">Get Shipping Quote</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
