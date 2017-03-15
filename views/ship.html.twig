@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
-    <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <link href="/css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="/css/styles.css" type="text/css" rel="stylesheet">
     <title>Shipping Quote</title>
   </head>
   <body>
     <div class="container">
       <h1>Shipping Quote:</h1>
-      <form id="userInput" action="result.php">
+      <form action="/quote" method="post">
         <div class="form-group">
           <label for="lengthInput">Enter parcel length?</label>
           <input id="lengthInput" name="lengthInput" class="form-control" type="number" required>
@@ -25,9 +25,7 @@
           <label for="weightInput">Enter parcel weight?</label>
           <input id="weightInput" name="weightInput" class="form-control" type="number" required>
         </div>
-        <div class="form-group">
-          <button type="submit" class="btn btn-success">Get Shipping Quote</button>
-        </div>
+        <button type="submit" class="btn btn-success">Get Shipping Quote</button>
       </form>
     </div>
   </body>
